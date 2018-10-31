@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.seccion.nleiva.ejercicioseccion4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_face"
+        android:label="My Form"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SecondActivity" />
+        <activity android:name=".activities.ListViewActivity" />
+        <activity android:name=".activities.GridViewActivity" />
+        <activity android:name=".activities.RecyclerViewActivity" />
+        <activity android:name=".activities.RecyclerMainActivity" />
+        <activity android:name=".activities.CardView" />
+        <activity android:name=".activities.RecyclerAndViewActivity"></activity>
+    </application>
+
+</manifest>

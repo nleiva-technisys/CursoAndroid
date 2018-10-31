@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SecondActivity">
+
+    <RadioButton
+        android:id="@+id/radioButtonSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="44dp"
+        android:text="Salido"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonDespedida"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButtonDespedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:text="Despedida"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarEdad"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonSaludo"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonSaludo" />
+
+    <SeekBar
+        android:id="@+id/seekBarEdad"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="57dp"
+        android:tooltipText="EDAD"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEdad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonDespedida" />
+
+    <TextView
+        android:id="@+id/textViewEdad"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="109dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <ListView
+        android:id="@+id/listViewMuestra"
+        android:layout_width="203dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEdad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonSaludo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+</android.support.constraint.ConstraintLayout>
